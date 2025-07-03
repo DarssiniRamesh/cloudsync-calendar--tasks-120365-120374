@@ -13,4 +13,8 @@ app.add_middleware(
 
 @app.get("/")
 def health_check():
+    """
+    PUBLIC_INTERFACE
+    Health check endpoint for backend.
+    """
     return {"message": "Healthy"}
